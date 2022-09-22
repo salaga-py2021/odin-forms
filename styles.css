@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'norse-bold';
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #F2F2F2;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#left-area{
+    width: 35%;
+    background-image: url(./imgs/odin-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: brightness(60%);
+    height: 120px;
+    margin-top: 40%;
+}
+
+.header-text{
+    font-family: 'norse-bold';
+    font-size: 4.5rem;
+    color: white;
+    padding-top: 20px;
+}
+
+.logo-area img{
+    height: 100px;
+}
+
+/* Why is the container bigger when 35% is set for it's width? */
+.image-credit{
+    position: absolute; 
+    width: 33%; 
+    bottom: 0px;
+    text-align: center;
+    color: white;
+}
+
+.image-credit a{
+    color: inherit;
+}
+
+#right-area{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 8% 0%;
+    gap: 30px;
+}
+
+#right-area .main-text {
+    font-size: 1.2rem;
+    margin: 0% 30px;
+}
+
+p{
+    margin: 20px;
+}
+
+#right-area form{
+    height: 45%;
+    background-color: white;
+    margin: 0%;
+    filter: drop-shadow(2px 2px 7px grey);
+}
+
+#right-area button{
+    margin: 0% 45px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgb(90,109,74);
+    color: white;
+    font-weight: bold;
+}
+
+#right-area .log-in{
+    margin: 0% 45px;
+    color: black;
+}
+
+#right-area a{
+    color: rgb(90,109,74);
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-container{
+    display: flex;
+    gap: 20px;
+    height: 80%;    
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1 1 auto;
+}
+
+.col>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.col-3{
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.col-3 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.80rem; ;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;;
+    font-size: 0.65rem;
+}
+
+input{
+    height: 23px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+}
