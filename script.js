@@ -16,26 +16,18 @@ checkListMap = {
     'number':checkList[2],
     'symbol':checkList[3],
     'tenChar':checkList[4],
-    'passwordMatch':checkList[5],
 }
 
 
 function checkPassword(userInput){
     password = this.value;
-    if (regex_dictionary.uppercase.test(password)){
-        checkListMap['uppercase'].style.color = 'green';
-    }
-    if (regex_dictionary.lowercase.test(password)){
-        checkListMap['lowercase'].style.color = 'green';
-    }
-    if (regex_dictionary.number.test(password)){
-        checkListMap['number'].style.color = 'green';
-    }
-    if (regex_dictionary.symbol.test(password)){
-        checkListMap['symbol'].style.color = 'green';
-    }
-    if (regex_dictionary.tenChar.test(password)){
-        checkListMap['tenChar'].style.color = 'green';
+    for (const checkElement in checkListMap){
+        if (regex_dictionary[checkElement].test(password)){
+            checkListMap[checkElement].style.color = 'green'
+        }
+        else {
+            checkListMap[checkElement].style.color = 'black'
+        }
     }
 }
 
