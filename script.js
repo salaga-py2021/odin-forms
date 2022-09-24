@@ -31,4 +31,16 @@ function checkPassword(userInput){
     }
 }
 
+function checkMatch(userInput){
+    passwordCheck = this.value;
+    console.log(this.value);
+    if (this.value == passwordInput.value){
+        checkList[5].style.color = 'green'
+    }
+    else {
+        checkList[5].style.color = 'black'
+    }
+}
+
 passwordInput.addEventListener('input',checkPassword);
+passwordCheckInput.addEventListener('input', checkMatch)
