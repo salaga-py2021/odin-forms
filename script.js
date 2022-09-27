@@ -28,7 +28,7 @@ function checkPassword(userInput){
         else {
             checkListMap[checkElement].style.color = 'black'
         }
-        if (checkList[5].style.length >=0){
+        if (checkList[5].style.length > 0){
             if (password != passwordCheckInput.value){
                 checkList[5].style.color = 'black'
             }
@@ -36,15 +36,23 @@ function checkPassword(userInput){
                 checkList[5].style.color = 'green'
             }
         }
+        else{
+            checkList[5].style.color = 'black'
+        }
     }
 }
 
 function checkMatch(userInput){
     passwordCheck = this.value;
-    if (this.value == passwordInput.value){
-        checkList[5].style.color = 'green'
+    if (passwordCheck.length > 0){
+        if (this.value == passwordInput.value){
+            checkList[5].style.color = 'green'
+        }
+        else {
+            checkList[5].style.color = 'black'
+        }
     }
-    else {
+    else{
         checkList[5].style.color = 'black'
     }
 }
