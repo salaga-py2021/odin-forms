@@ -28,6 +28,14 @@ function checkPassword(userInput){
         else {
             checkListMap[checkElement].style.color = 'black'
         }
+        if (checkList[5].style.length >=0){
+            if (password != passwordCheckInput.value){
+                checkList[5].style.color = 'black'
+            }
+            else {
+                checkList[5].style.color = 'green'
+            }
+        }
     }
 }
 
