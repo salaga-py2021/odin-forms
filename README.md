@@ -1,7 +1,7 @@
 # odin-forms
 Building a webpage with a form that has built-in client side validation
 
-## [Live Demo](https://github.com/salaga-py2021/odin-forms)
+## [Live Demo](https://salaga-py2021.github.io/odin-forms/)
 
 Things to Improve: 
 1. Add Dark Mode for the WebPage
